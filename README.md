@@ -1,6 +1,6 @@
 # 📊 Sales Data Analysis
 
-End-to-end sales data analysis performed on a structured dataset to extract meaningful business insights using Python and its libraries.
+End-to-end sales data analysis performed on a structured dataset of ~ 6,000 records to extract meaningful business insights using Python and its libraries.
 
 ---
 
@@ -22,12 +22,12 @@ To perform a complete sales data analysis including data cleaning, feature engin
 
 ## 🛠️ Tools & Libraries Used
 
-| Tool | Purpose |
-|------|---------|
-| Python | Core programming language |
-| Pandas | Data manipulation and cleaning |
-| NumPy | Numerical computations |
-| Matplotlib | Data visualization |
+| Tool             | Purpose                          |
+|------------------|----------------------------------|
+| Python           | Core programming language        |
+| Pandas           | Data manipulation and cleaning   |
+| NumPy            | Numerical computations           |
+| Matplotlib       | Data visualization               |
 | Jupyter Notebook | Interactive development environment |
 
 ---
@@ -35,10 +35,10 @@ To perform a complete sales data analysis including data cleaning, feature engin
 ## 🔄 Project Workflow
 
 ### 1. Data Cleaning
-- Handled missing values
-- Removed incorrect entries (zero and negative values)
-- Fixed inconsistent text formats
-- Eliminated duplicate records
+- Handled missing values across the dataset
+- Corrected invalid entries (zero and negative prices)
+- Standardized inconsistent categorical data
+- Removed duplicate records to ensure data integrity
 
 ### 2. Feature Engineering
 - Created Revenue column (Price × Quantity)
@@ -57,22 +57,55 @@ To perform a complete sales data analysis including data cleaning, feature engin
 
 ---
 
-## 📈 Key Insights
+## 📈 Key Insights & Numbers
 
-- 💻 High-value products like laptops and tablets contribute the most to overall revenue
-- 📦 Revenue is driven by pricing rather than quantity sold — lower-priced items generate less revenue despite similar sales volume
-- 🌍 West region contributes the highest revenue
-- 📉 South region contributes the least revenue and has the most growth potential
-- 📅 Quarterly trends reveal consistent patterns useful for forecasting
+### 💰 Overall Revenue
+| Metric | Value |
+|--------|-------|
+| Total Revenue | ₹525.8M+ |
+| Total Records Analyzed | ~6,000 |
+
+---
+
+### 🛍️ Revenue by Category
+| Category | Revenue | Units Sold |
+|----------|---------|------------|
+| Electronics | ~₹474M | 13,448 units |
+| Fashion | ~₹51.7M | 12,966 units |
+
+> 💡 Despite similar sales volumes, Electronics generates 9x more revenue than
+> Fashion — proving that revenue is strongly driven by product pricing, not quantity.
+
+---
+
+### 🌍 Revenue by Region
+| Region | Revenue | Performance |
+|--------|---------|-------------|
+| West | ~₹134M | 🏆 Highest |
+| North | ~₹132M | 2nd |
+| East | ~₹130M | 3rd |
+| South | ~₹128M | 📉 Lowest |
+
+> 💡 Regional distribution is relatively balanced, but South has the most
+> room for growth.
+
+---
+
+### 💻 Product-Level Performance
+| Product | Performance |
+|---------|-------------|
+| Laptops | 🏆 Top Revenue Driver |
+| Tablets | 2nd Highest Revenue |
+| Shoes | 📉 Lowest Revenue Contributor |
 
 ---
 
 ## 💡 Business Recommendations
 
-1. Focus on high-value products — prioritize marketing and stock availability for laptops and tablets
-2. Improve South region performance — invest in targeted campaigns and regional strategies
-3. Optimize pricing strategies — revisit pricing for lower-revenue products to improve margins
-4. Leverage quarterly trends — plan inventory and promotions around peak sales periods
+1. Focus on High-Value Products — Prioritize marketing and stock availabilityfor Laptops and Tablets as they are the primary revenue drivers
+2. Improve South Region Performance — Invest in targeted regional campaignsto close the gap with the West region (~₹6M difference)
+3. Optimize Pricing for Fashion Category — Despite 12,966 units sold,Fashion contributes only ₹51.7M vs Electronics ₹474M — revisiting pricing strategy could significantly boost revenue
+4. Leverage Quarterly Trends — Plan inventory and promotions aroundpeak sales periods identified in time-based analysis
 
 ---
 
@@ -81,13 +114,13 @@ To perform a complete sales data analysis including data cleaning, feature engin
 | File | Description |
 |------|-------------|
 | sales_messy.csv | Raw dataset with missing values, duplicates, and inconsistencies |
-| sales_cleaned.csv | Processed dataset ready for analysis |
+| sales_cleaned.csv | Cleaned and processed dataset ready for analysis |
 
 ---
 
 ## 🚀 How to Run
 
-1. Clone the repository
+1. Clone or download this repository
 2. Open Notebooks/Analysis.ipynb in Jupyter Notebook
 3. Run all cells sequentially
 
@@ -95,5 +128,5 @@ To perform a complete sales data analysis including data cleaning, feature engin
 
 ## 👤 Author
 
-Vivek Kaushik 
+Vivek Kaushik
 [GitHub](https://github.com/vivek-kaushik-data) | [LinkedIn](https://www.linkedin.com/in/vivek-kaushik-cse)
